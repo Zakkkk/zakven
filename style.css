@@ -47,7 +47,6 @@ body {
 }
 
 .project {
-    -height: 200px;
     background: var(--base03);
     padding: 20px;
 }
