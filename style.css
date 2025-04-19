@@ -1,3 +1,60 @@
+.typewriter h1 {
+    border-right: 0.15em solid var(--base1);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.typewriter h1:nth-child(1) {
+    width: 10.3ch;
+    opacity: 0;
+    -webkit-animation:
+        type3 3s steps(20, end),
+        blink 0.5s step-end infinite alternate;
+    animation:
+        type3 3s steps(20, end),
+        blink 0.5s step-end infinite alternate;
+
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes type3 {
+    0% {
+        width: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes type3 {
+    0% {
+        width: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+@-webkit-keyframes blink {
+    50% {
+        border-color: tranparent;
+    }
+}
+
+/* Stolen from https://css-tricks.com/snippets/css/typewriter-effect/ */
+
 :root {
     --base03: #002b36;
     --base02: #073642;
