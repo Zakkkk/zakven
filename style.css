@@ -79,6 +79,11 @@
     box-sizing: border-box;
 }
 
+*::selection {
+    background: var(--blue);
+    color: var(--base02);
+}
+
 body {
     font-family: "Fira Code";
 
@@ -141,6 +146,7 @@ h4 {
 button {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
 
     cursor: pointer;
 
@@ -184,7 +190,6 @@ a {
 
 .button-container button {
     width: 100%;
-    justify-content: center;
 }
 
 hr {
