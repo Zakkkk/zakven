@@ -1,10 +1,11 @@
-.typewriter h1 {
+.typewriter h1:after {
+    content: "";
     border-right: 0.15em solid var(--base1);
     white-space: nowrap;
     overflow: hidden;
 }
 
-.typewriter h1:nth-child(1) {
+.typewriter h1:after {
     width: 10.3ch;
     opacity: 0;
     -webkit-animation:
@@ -177,12 +178,16 @@ a {
 
 .button-container {
     display: grid;
-    container-type: inline-size;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 0.625rem;
 }
 
-@container (max-width: calc(3 * 180px + 2 * 0.625rem)) {
+.button-container a button {
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
     .button-container {
         grid-template-columns: 1fr;
     }
