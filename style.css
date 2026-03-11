@@ -94,6 +94,14 @@ body {
     color: var(--base0);
 }
 
+code {
+    background: var(--base02);
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    color: var(--red);
+}
+
 .container {
     width: 80%;
     max-width: 800px;
